@@ -1,0 +1,130 @@
+.hero
+    &-title
+      font-size: 38px
+      font-weight: bold
+      color: $white
+      margin: 110px 0 10px 0
+    &-subtitle
+        font-size: 30px
+        font-weight: bold
+        color: $white
+    &-button
+        display: block
+        text-transform: uppercase
+        color: $white
+        background-color: $green
+        font-weight: bold
+        margin-top: 30px
+        margin-bottom: 35px
+        &:hover
+            cursor: pointer
+            background-color: darken($green,10%)
+            transition: .1s
+    &-images
+        position: relative
+        &__raptor
+            position: absolute
+            right: 30px
+            transform: translateY(-155px)
+@media (max-width: 991px)
+    .hero-images__raptor
+        max-width: 400px
+        width: 100%
+        transform: translateY(-120px)
+    .hero-images__glasses
+        max-width: 250px
+        width: 100%
+@media (max-width: 768px)
+    .hero
+        text-align: center
+        &-title
+         display: block
+         font-size: 30px
+         font-weight: bold
+         color: $white
+         margin: 60px 0 10px 0
+        &-subtitle
+            display: block
+            font-size: 30px
+            font-weight: bold
+            color: $white
+        &-button
+            display: inline-block
+            text-align: center
+            text-transform: uppercase
+            color: $white
+            background-color: $green
+            font-weight: bold
+            margin-top: 30px
+            margin-bottom: 35px
+        &-images
+            margin-top: 30px
+            &__glasses
+                display: block
+                width: 40%
+            &__raptor
+                width: 50%
+                transform: translateY(-170px)
+@media (max-width: 564px)
+    .hero
+        text-align: center
+        &-title
+         display: block
+         font-size: 20px
+         font-weight: bold
+         color: $white
+         margin: 60px 0 10px 0
+        &-subtitle
+            font-size: 20px
+            font-weight: bold
+            color: $white
+        &-button
+            display: inline-block
+            text-align: center
+            text-transform: uppercase
+            color: $white
+            background-color: $green
+            font-weight: bold
+            margin-top: 30px
+            margin-bottom: 35px
+        &-images
+            margin-top: 50px
+            &__glasses
+                display: block
+                width: 40%
+            &__raptor
+                width: 50%
+                transform: translateY(-135px)
+@media (max-width: 420px)
+    .hero
+        text-align: center
+        &-title
+         display: block
+         font-size: 20px
+         font-weight: bold
+         color: $white
+         margin: 60px 0 10px 0
+        &-subtitle
+            font-size: 20px
+            font-weight: bold
+            color: $white
+        &-button
+            font-size: 17px
+            display: inline-block
+            text-align: center
+            text-transform: uppercase
+            color: $white
+            background-color: $green
+            font-weight: bold
+            margin-top: 30px
+            margin-bottom: 35px
+        &-images
+            margin-top: 50px
+            &__glasses
+                display: block
+                width: 45%
+            &__raptor
+                right: 10px
+                width: 50%
+                transform: translateY(-90px)
+    

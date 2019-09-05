@@ -1,0 +1,156 @@
+.complect
+    background-color: $bg-color
+    background-size: cover
+    min-height: 660px
+.complectation
+    position: relative
+    &-button
+        max-width: 510px
+        width: 100%
+    &-title
+        font-size: 37px
+        font-weight: bold
+        margin-top: 0
+        margin-bottom: 40px
+        padding-top: 100px
+    &-description
+        font-size: 17px
+        width: 100%
+        max-width: 570px
+    &-wrap
+        
+    &-image
+        position: absolute
+        top: 20%
+        right: 0
+    &-types
+        display: flex
+        &__price
+            color: red
+            font-size: 25px
+        &__inside
+            margin-left: 75px
+            &:first-child
+                margin: 0
+            h4
+                font-size: 20px
+                font-weight: 700
+            ul
+                list-style-type: none
+                padding: 0
+                font-size: 17px
+                
+@media (max-width: 1199px)
+    .complectation
+        position: relative
+        &-button
+            max-width: 510px
+            width: 100%
+        &-title
+            font-size: 37px
+            font-weight: bold
+            margin-top: 0
+            margin-bottom: 40px
+            padding-top: 100px
+        &-description
+            font-size: 17px
+            width: 100%
+            max-width: 570px        
+        &-image
+            position: absolute
+            top: 20%
+            right: -17%
+            img
+                max-width: 70%
+@media (max-width: 991px)
+    .complectation
+        display: block
+        text-align: center
+        &-button
+            max-width: 510px
+            width: 100%
+            text-align: center
+            margin: 20px auto
+        &-title
+            font-size: 37px
+            font-weight: bold
+            margin-top: 0
+            margin-bottom: 40px
+            padding-top: 100px
+        &-description
+            font-size: 17px
+            width: 100%
+            margin: 0 auto 25px
+
+        &-image
+            position: relative
+            display: inline-block
+            top: 20%
+            right: 0
+        &-types
+            display: flex
+            justify-content: space-around
+            &__price
+                color: red
+                font-size: 25px
+            &__inside
+                margin-left: 75px
+                &:first-child
+                    margin: 0
+                h4
+                    font-size: 20px
+                    font-weight: 700
+                ul
+                    list-style-type: none
+                    padding: 0
+                    font-size: 17px
+@media (max-width: 564px)
+    .complectation
+        &-button
+            font-size: 14px
+        &-types
+            flex-direction: column
+            &__price
+                color: red
+                font-size: 20px
+            &__inside
+                margin-left: 0
+                text-align: left
+                &:first-child
+                    margin: 0
+                h4
+                    font-size: 20px
+                    font-weight: 700
+                ul
+                    list-style-type: none
+                    padding: 0
+                    font-size: 17px
+@media (max-width: 420px)
+    .complectation
+        &-title
+            font-size: 25px
+            padding: 20px
+            margin-bottom: 10px
+        &-description
+            font-size: 15px
+            text-align: left
+        &-button
+            font-size: 9px
+            padding: 15px 15px
+        &-types
+            flex-direction: column
+            &__price
+                color: red
+                font-size: 20px
+            &__inside
+                margin-left: 0
+                text-align: left
+                &:first-child
+                    margin: 0
+                h4
+                    font-size: 20px
+                    font-weight: 700
+                ul
+                    list-style-type: none
+                    padding: 0
+                    font-size: 17px

@@ -1,0 +1,68 @@
+.header
+    background: url('../images/header/bg.jpg') center no-repeat
+    background-size: cover
+    min-height: 730px
+    &-top
+        background-color: rgba(#000,0.7)
+        &__wrap
+            min-height: 85px
+            display: flex
+            align-items: center
+            justify-content: space-between
+            color: #ffffff
+        &__logo
+            &__description
+                display: inline-block
+                margin-left: 15px
+                font-size: 20px 
+        &__phone
+            display: flex
+            justify-content: flex-end
+            font-size: 25px
+            font-weight: bold
+            color: #fff
+        &__call
+            display: flex
+            justify-content: flex-end
+            font-style: 20px
+            color: $green
+            margin-top: 10px
+@media (max-width: 768px)
+    .header
+        &-top
+            &__wrap
+                display: flex
+                align-items: center
+                justify-content: center
+                flex-direction: column
+                color: $white
+            &__logo
+                margin-top: 15px
+                &__description
+                    display: inline-block
+                    margin-left: 10px
+                    font-size: 12px
+            &__mobile
+                display: flex
+                justify-content: space-around
+                margin-top: 10px
+            &__phone
+                font-size: 16px
+                font-weight: bold
+                color: $white
+                margin-right: 10px  
+            &__call
+                display: flex
+                justify-content: flex-end
+                font-size: 14px
+                color: $green
+                margin: auto
+.logo
+    &-image
+        max-width: 55px 
+        width: 100%
+@media (max-width: 564px)
+    .header
+        background: url('../images/header/bg.jpg') center no-repeat
+        background-size: cover
+        min-height: 620px
