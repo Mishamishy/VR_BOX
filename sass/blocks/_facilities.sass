@@ -48,9 +48,62 @@
             margin: 0 auto
 
 @media (max-width: 1199px)
-    .facilities-second__diamond 
+    .facilities-second__diamond
         right: -7%
         z-index: -1
+@media (max-width: 1199px)
+    .facilities
+        margin-top: 100px
+        &-first
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            position: relative
+            h4
+                position: relative
+                font-size: 22px
+                &:before
+                    content: url(../images/facilities/1.png)
+                    position: absolute
+                    left: -60px
+                    bottom: 0
+            &__diamond
+                display: none
+                position: absolute
+                left: 12%
+                bottom: 93px
+                z-index: -1
+            &__description
+                max-width: 388px
+                width: 100%
+                font-size: 17px
+                margin: 0
+        &-second
+            display: flex
+            flex-direction: column-reverse
+            justify-content: center
+            align-items: center
+            margin-bottom: 90px
+            position: relative
+            h4
+                position: relative
+                font-size: 22px
+                &:before
+                    content: url(../images/facilities/2.png)
+                    position: absolute
+                    left: -60px
+                    bottom: 0
+            &__diamond
+                display: none
+                position: absolute
+                right: -10%
+                top: -20%
+            &__description
+                max-width: 370px
+                width: 100%
+                font-size: 17px
+                margin: 0 auto
 @media (max-width: 991px)
     .facilities
         margin-top: 100px
