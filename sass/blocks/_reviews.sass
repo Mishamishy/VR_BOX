@@ -1,0 +1,156 @@
+.reviews
+    background-color: $bg-color
+.review
+    &__boxes
+        display: flex
+        flex-wrap: wrap
+        margin-top: 70px
+    &__box
+        background-color: $white
+        border: 1px solid $blue
+        border-radius: 5px
+        max-width: 580px
+        height: 100%
+        padding: 30px
+        margin: 2px
+        flex-basis: 50%
+        &-diamond
+            position: absolute
+            right: -87px
+            top: -124px
+            width: 30%
+    &__box-relative
+        position: relative
+    &__photo
+        border-radius: 50%
+    &__info
+        display: flex
+        align-items: center
+    &__name
+        margin-left: 20px
+        +semi-bold
+        font-size: 18px
+    &__text
+        font-size: 16px
+        line-height: 24px
+
+@media (max-width: 1199px)
+ .reviews
+    background-color: $bg-color
+ .review
+    &__boxes
+        display: flex
+        flex-wrap: wrap
+        margin-top: 70px
+    &__box
+        background-color: $white
+        border: 1px solid $blue
+        border-radius: 5px
+        max-width: 476px
+        height: 100%
+        padding: 30px
+        margin: 2px
+        flex-basis: 50%
+        &-diamond
+            position: absolute
+            right: -25px
+            top: -30px
+            width: 19%
+    &__box-relative
+        position: relative
+    &__photo
+        border-radius: 50%
+    &__info
+        display: flex
+        align-items: center
+    &__name
+        margin-left: 20px
+        +semi-bold
+        font-size: 18px
+    &__text
+        font-size: 16px
+        line-height: 24px
+@media (max-width: 991px)
+ .reviews
+    background-color: $bg-color
+ .review
+    &__boxes
+        display: flex
+        flex-wrap: wrap
+        margin-top: 70px
+        justify-content: center
+    &__box
+        background-color: $white
+        border: 1px solid $blue
+        border-radius: 5px
+        max-width: 476px
+        height: 100%
+        padding: 30px
+        margin: 2px
+        flex-basis: 100%
+        &-diamond
+            position: absolute
+            right: -25px
+            top: -30px
+            width: 19%
+            display: none
+    &__box-relative
+        position: relative
+    &__photo
+        border-radius: 50%
+    &__info
+        display: flex
+        align-items: center
+    &__name
+        margin-left: 20px
+        +semi-bold
+        font-size: 18px
+    &__text
+        font-size: 16px
+        line-height: 24px
+@media (max-width: 320px)
+ .reviews
+    background-color: $bg-color
+    &__title
+        font-size: 22px
+        padding-top: 20px
+ .review
+    &__boxes
+        display: flex
+        flex-wrap: wrap
+        margin-top: 70px
+        justify-content: center
+    &__box
+        background-color: $white
+        border: 1px solid $blue
+        border-radius: 5px
+        max-width: 476px
+        height: 100%
+        padding: 30px 30px 20px 30px
+        margin: 2px
+        flex-basis: 100%
+        &-diamond
+            position: absolute
+            right: -25px
+            top: -30px
+            width: 19%
+            display: none
+    &__box-relative
+        position: relative
+    &__photo
+        border-radius: 50%
+    &__info
+        display: flex
+        align-items: center
+        flex-direction: column
+        justify-content: center
+    &__name
+        display: block
+        text-align: left
+        margin: 0 
+        +semi-bold
+        font-size: 15px
+        margin-top: 10px
+    &__text
+        font-size: 13px
+        line-height: 24px
