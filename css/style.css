@@ -1590,6 +1590,7 @@ button {
   font-weight: 900;
   max-width: 500px;
   margin-bottom: 20px;
+  padding-top: 0;
 }
 
 @media (max-width: 564px) {
