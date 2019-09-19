@@ -2,6 +2,11 @@
     background: url('../images/header/bg.jpg') center no-repeat
     background-size: cover
     min-height: 730px
+    &-footer
+        background: #000
+        min-height: 0
+        margin-top: 80px
+
     &-top
         background-color: rgba(#000,0.7)
         &__wrap
@@ -29,6 +34,10 @@
             margin-top: 10px
 @media (max-width: 768px)
     .header
+        &-footer
+            background: #000
+            min-height: 0
+            margin-top: 80px
         &-top
             &__wrap
                 display: flex
@@ -66,3 +75,7 @@
         background: url('../images/header/bg.jpg') center no-repeat
         background-size: cover
         min-height: 620px
+        &-footer
+            background: #000
+            min-height: 0
+            margin-top: 80px

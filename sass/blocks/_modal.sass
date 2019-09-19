@@ -1,4 +1,49 @@
 .modal
+    &-close
+        position: absolute
+        right: 4px
+        top: 8px
+        width: 32px
+        height: 32px
+        &:hover
+            cursor: pointer
+        &:before
+            position: absolute
+            content: ''
+            left: 15px
+            height: 17px
+            width: 2px
+            background-color: $white
+            transform: rotate(45deg)
+        &:after
+            position: absolute
+            content: ''
+            left: 15px
+            height: 17px
+            width: 2px
+            background-color: $white
+            transform: rotate(-45deg)
+    &-show 
+        display: none
+        position: fixed
+        top: 50%
+        left: 0
+        right: 0
+        margin: 0 auto
+        transform: translateY(-50%)
+        animation: animatezoom 1s
+    &-bg
+        display: none
+        position: fixed
+        left: 0
+        right: 0
+        top: 0
+        bottom: 0
+        width: 100%
+        height: 100%
+        z-index: 9
+        background-color: rgba(0, 0, 0, 0.8)
+        
     display: flex
     justify-content: flex-start
     width: 380px
@@ -40,6 +85,10 @@
             font-weight: bold
             text-transform: uppercase
             padding: 20px 44px
+            &:hover
+                cursor: pointer
+                background-color: darken($green,10%)
+                transition: .1s
         &__info 
             display: block
             margin-top: 10px
@@ -47,6 +96,30 @@
             font-weight: normal
             opacity: .8
             text-align: center
+.close 
+    position: absolute
+    right: 32px
+    top: 32px
+    width: 32px
+    height: 32px
+    opacity: 0.3
+    &:hover
+        opacity: 1
+    &:before,
+    &:after
+        position: absolute
+        left: 15px
+        content: ' '
+        height: 33px
+        width: 2px
+        background-color: #333
+    &:before
+        transform: rotate(45deg)
+
+    &:after 
+        transform: rotate(-45deg)
+
+
 
 @media (max-width: 564px)
     .modal

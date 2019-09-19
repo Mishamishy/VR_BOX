@@ -17,9 +17,38 @@ button
     border: none
     padding: 25px 40px
     box-shadow: 0 14px 28px rgba(0,0,0,0.1), 0 10px 10px rgba(0,0,0,0.15)
+    &:active
+        outline: none
+    &:focus
+        outline: none
 .title
     text-align: center
     font-size: 35px
+    padding-top: 80px
+    +bold
+    &::after
+        content: ''
+        height: 5px
+        width: 50px
+        background-color: #18a7d0
+        display: block
+        margin: 0 auto
+        margin-top: 10px
+        margin-bottom: 30px
+@keyframes animatezoom 
+
+  from 
+      top: 100px
+  to 
+      top: 50%
+
+  
+
+      
+@media (max-width: 564px)
+ .title
+    text-align: center
+    font-size: 25px
     padding-top: 80px
     +bold
     &::after
